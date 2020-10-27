@@ -4,8 +4,7 @@ end
 require "anbt-sql-formatter/formatter"
 
 Shoes.app do
-  title 'ShoeSQL'
-  background darkgray
+  background "#282828"
   flow do
     image 'logo.jpg'
     @edit_box = edit_box('Insert SQL', width: 596, height: 200)
@@ -21,10 +20,10 @@ Shoes.app do
       rule.indent_string = "    "
       formatter = AnbtSql::Formatter.new(rule)
       result = formatter.format(@edit_box.text)
-      @paragraph.text = result
+      @output.text = result
     end
   end
   flow do
-    @paragraph = para ''
+    @output = edit_box('', width: 596, height: 200)
   end
 end
