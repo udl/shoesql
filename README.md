@@ -7,6 +7,10 @@ ShoeSQL is a little desktop app that can format SQL strings so that you don't ha
 
 It's built with https://github.com/shoes/shoes3 and https://github.com/sonota88/anbt-sql-formatter.
 
+## Running the app
+
+There is a standalone [OSX application](https://github.com/udl/shoesql/releases). For other operating systems, please either contribute a standalone version or go with the Shoes app approach (see below).
+
 ## Running the app as Shoes app
 
 Until there is a wrapped version of the application, you need to [download](http://shoesrb.com/downloads/) the appropriate shoes version for your operating system.
